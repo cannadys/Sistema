@@ -46,5 +46,6 @@ class MainAdapter(
                 .into(itemView.iv_meals)
             itemView.tv_meals.text = meals.strMeals
         }
+
     }
 }
