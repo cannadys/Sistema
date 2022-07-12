@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleClickProduct(listMeals: ListMeals) {
-        DetailActivity.moveToDetailMeals(applicationContext, listMeals)
+        DetailActivity.moveToDetailMeals(this, listMeals)
     }
 
     private fun showLoading() {

@@ -1,5 +1,6 @@
 package com.example.sistema.persentation.detail
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -80,7 +81,7 @@ class DetailActivity : AppCompatActivity() {
     companion object{
         const val LIST_MEAL_FOR_DETAIL = "listMealForDetail"
 
-        fun moveToDetailMeals(context: Context,listMeals: ListMeals) {
+        fun moveToDetailMeals(context: Activity, listMeals: ListMeals) {
             val intent = Intent(context, DetailActivity::class.java)
             intent.apply {
                 putExtra(LIST_MEAL_FOR_DETAIL, listMeals as Serializable)
